@@ -19,3 +19,17 @@ Using the BLEU-calculation script provided by OpenNMT allows to evaluate the gen
 * [Sentence Simplification with Deep Reinforcement Learning (Zhang et al. 2017)](http://aclweb.org/anthology/D/D17/D17-1062.pdf) (Some fancy enc/dec based performance hacks)
 * [An Experimental Study of LSTM Encoder-Decoder Model for Text Simplification (Wang et al. 2016)](https://arxiv.org/pdf/1609.03663.pdf) (Ways of evaluating structural changes learned by enc/dec)
 * [Tutorial used as reference and to valid setup (on en-vi translation dataset)](https://github.com/tensorflow/nmt)
+
+## Citation
+```
+@inproceedings{berov_standvoss_2018,
+address = {Tilburg, The Netherlands},
+title = {Discourse Embellishment Using a Deep Encoder-Decoder Network},
+booktitle = {3rd Workshop on Computational Creativity and Natural Language Generation},
+publisher = {
+ACL Antology}},
+author = {Berov, Leonid and Standvoss, Kai},
+year = {2018},
+pages = {11--16}
+}
+```
