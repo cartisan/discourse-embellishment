@@ -1,0 +1,36 @@
+# OpenNMT parameters for wikilarge dataset
+
+params:
+  optimizer: AdamOptimizer
+  optimizer_params:
+      beta1: 0.9
+      beta2: 0.999
+  learning_rate: 0.1
+  param_init: 0.1
+  clip_gradients: 5.0
+  decay_type: exponential_decay
+  decay_rate: 0.25
+  start_decay_steps: 337500 # start after 18 epochs
+  decay_steps: 18750 #decy after 1 epoch
+  beam_width: 10
+  maximum_iterations: 500
+  replace_unknown_target: false  # 'true' not supported by our old version of tf :(
+
+train:
+  batch_size: 16
+  bucket_width: 1
+  save_checkpoints_steps: 500
+  keep_checkpoint_max: 1
+  save_summary_steps: 50
+  train_steps: 450000  # 24 epochs: with n=300000 and batch=16
+  maximum_features_length: 70
+  maximum_labels_length: 70
+  sample_buffer_size: 297933  # Consider setting this to the training dataset size.
+
+eval:
+  eval_delay: 1800  # Every 0.5 hours
+  batch_size: 16 # my changes
+  external_evaluators: BLEU
+
+infer:
+  batch_size: 16

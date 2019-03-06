@@ -1,0 +1,9 @@
+model_dir: data/store/complexicator/model_docaligned_complexify
+
+data:
+    train_features_file: complexicator/data/docaligned.simple.train
+    train_labels_file: complexicator/data/docaligned.normal.train
+    eval_features_file: complexicator/data/docaligned.simple.val
+    eval_labels_file: complexicator/data/docaligned.normal.val
+    source_words_vocabulary: complexicator/data/docaligned.vocab.simple
+    target_words_vocabulary: complexicator/data/docaligned.vocab.normal
